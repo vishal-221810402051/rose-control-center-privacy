@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for ROSE Control Center: local diagnostics, optional AI gateway use, credentials, data retention and your controls.">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="color-scheme" content="light dark">
+  <title>Privacy Policy | ROSE Control Center</title>
+  <style>
+    :root{color-scheme:light;--bg:#f6f7f9;--paper:#fff;--text:#172536;--muted:#4b5b6c;--line:#dce2e9;--accent:#075e67;--tint:#edf7f6}
+    *{box-sizing:border-box}html{scroll-padding-top:1rem}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1rem;line-height:1.75}
+    a{color:var(--accent);text-underline-offset:.2em;overflow-wrap:anywhere}a:hover{text-decoration-thickness:2px}a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+    .skip{position:absolute;left:1rem;top:-6rem;background:var(--paper);padding:.6rem 1rem}.skip:focus{top:1rem}
+    .wrap{width:min(100% - 3rem,70rem);margin:auto}.brand{padding:2rem 0 1.5rem;font-weight:700;letter-spacing:.08em;font-size:.82rem;text-transform:uppercase;color:var(--accent)}
+    header{border-bottom:1px solid var(--line);padding-bottom:2rem}.eyebrow{font-size:.85rem;color:var(--muted);margin:0}h1{font-size:clamp(2.3rem,6vw,3.7rem);line-height:1.15;letter-spacing:-.045em;margin:.5rem 0 1rem;font-weight:700}.intro{font-size:1.15rem;max-width:50rem;margin:.8rem 0}.date{font-size:.9rem;color:var(--muted)}
+    .layout{display:grid;grid-template-columns:13rem minmax(0,1fr);gap:3rem;margin:2.5rem 0 3.5rem}nav{font-size:.9rem}nav p{font-weight:650;margin:0 0 .6rem}nav ol{list-style:none;margin:0;padding:0}nav li{margin:.45rem 0}nav a{color:var(--muted)}
+    article{padding:2rem 2.4rem;background:var(--paper);border:1px solid var(--line);border-radius:.7rem;min-width:0}section+section{margin-top:2.2rem;padding-top:1.4rem;border-top:1px solid var(--line)}h2{font-size:1.32rem;line-height:1.35;letter-spacing:-.02em;margin:0 0 .8rem}p{margin:.75rem 0}ul{padding-left:1.25rem}li+li{margin-top:.45rem}.notice{border-left:3px solid var(--accent);padding:.75rem 1rem;background:var(--tint);margin:0 0 2rem}.notice p{margin:.2rem 0}code{font-size:.9em;overflow-wrap:anywhere}footer{border-top:1px solid var(--line);padding:1.5rem 0 2rem;color:var(--muted);font-size:.88rem}
+    @media(max-width:800px){.layout{grid-template-columns:1fr;gap:1.5rem}nav ol{display:flex;flex-wrap:wrap;gap:.25rem 1rem}nav li{margin:0}article{padding:1.5rem}.wrap{width:calc(100% - 2rem)}}
+    @media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#10171f;--paper:#17212c;--text:#e4ebf2;--muted:#b7c4d1;--line:#344454;--accent:#91e0d6;--tint:#1c3437}}
+    @media print{body{background:#fff;color:#111;font-size:10.5pt}.wrap{width:100%}.layout{display:block;margin:1rem 0}nav,.skip{display:none}article{border:0;padding:0}a{color:inherit}h2{break-after:avoid}section{break-inside:avoid}footer{padding-bottom:0}}
+  </style>
+</head>
+<body>
+<a class="skip" href="#policy">Skip to privacy policy</a>
+<div class="wrap">
+  <div class="brand">ROSE Control Center</div>
+  <header>
+    <p class="eyebrow">Windows desktop application</p>
+    <h1>Privacy policy</h1>
+    <p class="intro">Understand what stays on your computer, what an optional AI request sends, and how you control your information.</p>
+    <p class="date">Last updated: <time datetime="2026-11-09">9 November 2026</time> · Applies to ROSE Control Center version 1.0</p>
+  </header>
+  <div class="layout">
+    <nav aria-label="Policy contents">
+      <p>On this page</p>
+      <ol>
+        <li><a href="#scope">1. Scope</a></li><li><a href="#local-data">2. Local information</a></li>
+        <li><a href="#diagnostics">3. Device diagnostics</a></li><li><a href="#credentials">4. API credentials</a></li>
+        <li><a href="#cloud">5. Optional OpenAI requests</a></li><li><a href="#controls">6. Consent and controls</a></li>
+        <li><a href="#retention">7. Retention and deletion</a></li><li><a href="#security">8. Security</a></li>
+        <li><a href="#sharing">9. Sharing and other services</a></li><li><a href="#website">10. This website</a></li>
+        <li><a href="#contact">11. Publisher and privacy contact</a></li><li><a href="#rights">12. Your privacy rights</a></li>
+        <li><a href="#changes">13. Policy updates</a></li>
+      </ol>
+    </nav>
+    <article id="policy">
+      <aside class="notice" aria-label="Key distinction"><p><strong>The desktop app does not record microphone audio.</strong> Local diagnostics and separately authorized cloud requests are different activities. The optional cloud workflow sends text to OpenAI.</p></aside>
+      <section id="scope">
+        <h2>1. Scope and purpose</h2>
+        <p>ROSE Control Center is a Windows desktop tool for inspecting and managing an owner-configured ROSE gateway and related development infrastructure. This policy covers the desktop application and explains its interaction with an optional owner-operated gateway and a separately installed ROSE Android application. It does not describe every independent feature of the Android application.</p>
+        <p>The publisher is Vishal Nelaturi, an individual developer based in France. ROSE Control Center is currently intended for personal use and a restricted Microsoft Store audience. The gateway and OpenAI API account are owner-operated. The publisher does not currently offer a centrally hosted ROSE gateway or API service to other users.</p>
+        <p>The desktop tool does not give its developer automatic access to files on your computer. The publisher is responsible for handling correspondence sent to the privacy mailbox in section 11. App owners control their local data and gateway/provider accounts; the publisher does not centrally collect that data through the reviewed application. This does not establish a legal basis or a personal-use exemption for every owner's use, particularly if they process other people's information.</p>
+        <p>The desktop application does not record audio, run speech recognition or play text-to-speech. It contains no advertising, behavioral analytics or automatic diagnostic-upload feature. Using local diagnostics does not itself send an AI inference request.</p>
+      </section>
+      <section id="local-data">
+        <h2>2. Information used and stored locally</h2>
+        <p>The application uses information needed to display system status, inspect configuration, maintain authorization controls and preserve diagnostic evidence:</p>
+        <ul>
+          <li><strong>Preferences:</strong> selected folders, tool and repository paths, evidence location, refresh interval, display preferences and selected authorization-policy path.</li>
+          <li><strong>Operational diagnostics:</strong> gateway process identifiers, listener status, resource usage, network configuration and connectivity, public certificate details, public-key fingerprints, repository status, file names and hashes, timestamps, test outcomes and error categories.</li>
+          <li><strong>Request accounting and safety records:</strong> request/session identifiers, authorization and replay-protection records, attempt states, token counts and estimated cost/reservation totals in the existing local gateway SQLite ledger.</li>
+          <li><strong>Evidence and caches:</strong> local diagnostic logs, user-requested JSON/CSV exports, authorization files, consumed-attempt markers and copies of inspected Android APKs used for signature verification.</li>
+        </ul>
+        <p>Identifiers, paths and combined diagnostic details can identify a person, device or private environment; they are not necessarily anonymous. The gateway accounting ledger is designed to store counters and request metadata rather than prompt text or generated answers.</p>
+        <p>Default storage is in the <code>ROSEControlCenter</code> and <code>ROSEGateway</code> folders under your Windows user's Local AppData directory. Evidence may also be saved in a folder you select. These are ordinary local files; the application does not add its own encryption to settings, logs or the ledger.</p>
+      </section>
+      <section id="diagnostics">
+        <h2>3. Connected devices and network diagnostics</h2>
+        <p>With an authorized Android debugging connection, inspections can read device model/Android version, installed package identifiers and UIDs, APK hashes and signing certificates, and relevant ROSE consent, public-client-identity and consumed-request metadata. ADB uses the connected device's identifier to address commands. Relevant APKs may be copied to the local inspection cache. These checks do not regenerate Android signing keys or activate the microphone.</p>
+        <p>Network inspection can read Tailscale status, private forwarding/access-policy information and public TLS certificate metadata. A normal certificate-validated HTTPS GET may be sent to the configured private gateway to check reachability. That check is not an AI request. Selected diagnostics and tests can invoke installed tools such as ADB, Node, Git and PowerShell.</p>
+      </section>
+      <section id="credentials">
+        <h2>4. API credentials</h2>
+        <p>If you explicitly start an approved live-provider gateway session, the desktop application asks for your OpenAI API key in a native dialog, masked by default. It passes the key through the owned child process's standard-input pipe for runtime use. It does not intentionally save the key in application settings, policy files, exported logs, process command-line arguments or the accounting ledger.</p>
+        <p>The running application, gateway and SDK must hold credential material in memory while using it. Clearing a field or closing a process does not guarantee secure erasure of every managed-memory copy or operating-system diagnostic dump. Never share credentials, private keys or unreviewed diagnostic files. Revoke a compromised key through the provider's account controls.</p>
+      </section>
+      <section id="cloud">
+        <h2>5. Optional OpenAI requests</h2>
+        <p>Cloud operation requires separate owner configuration and authorization. The reviewed Android workflow defaults cloud intelligence to OFF and handles supported local commands locally. When cloud use is enabled and authorized, request text and bounded relevant conversation context travel from Android over authenticated HTTPS to the owner's gateway. A separately approved synthetic acceptance request may also use that path.</p>
+        <p>The live gateway sends text, recent relevant user/assistant exchanges, application instructions and selected model/settings to OpenAI over HTTPS for input-token counting and response generation. The provider also receives normal connection and account metadata. The reviewed request path does not upload raw microphone audio or diagnostic archives.</p>
+        <p>Response-generation requests set <code>store: false</code>. This is not a promise of zero provider retention. OpenAI's API data controls state that API data is not used for model training unless you opt in, and default abuse-monitoring logs can contain customer content and generally remain for up to 30 days, with exceptions. Retention also depends on feature and account settings. See <a href="https://developers.openai.com/api/docs/guides/your-data">OpenAI's API data controls</a> for the applicable details.</p>
+        <p>ROSE Control Center does not provide OpenAI account privacy settings or guarantee a particular processing country. The owner-operated gateway uses the owner's configured provider account; the desktop application does not itself establish that account's regional processing or international-transfer arrangements. Cancelling a request can prevent further local handling but cannot guarantee that a provider has not already processed it or incurred a charge.</p>
+      </section>
+      <section id="controls">
+        <h2>6. Consent and your controls</h2>
+        <p>Opening the desktop app can perform configured safe status inspections, including connectivity checks. You can change automatic inspection and refresh preferences. Starting a live gateway, approving a finite paid-request window and running a reviewed acceptance request are explicit owner actions with separate checks and confirmations; opening the dashboard is not authorization to spend.</p>
+        <p>Local paths and operational metadata are needed for the inspections you select. Without the corresponding tool access or configuration, those checks may be unavailable. Supplying an API key and enabling cloud features are optional; declining them prevents live-provider requests without enabling them automatically. An in-app authorization or permission toggle is a technical control, not by itself a statement of the legal basis for processing personal data.</p>
+        <p>You control which evidence is exported or shared and can inspect the files on your computer. You can disable a Control-Center-created authorization and stop its owned gateway through the application. Existing externally managed processes require their own controls. The Android application separately controls microphone permission and cloud consent; the desktop app does not grant either automatically. Turning cloud use off does not withdraw information already transmitted to a provider.</p>
+        <h3>Legal grounds for publisher-held correspondence</h3>
+        <p>The publisher uses the following legal grounds for the limited privacy/support correspondence activities described here. They are not an umbrella legal basis for local app data, owner-operated AI requests or independent service providers' processing:</p>
+        <ul>
+          <li><strong>Ordinary privacy/support questions:</strong> legitimate interests under GDPR Article 6(1)(f), specifically answering user-initiated enquiries and supporting the application, limited by the documented necessity and balancing assessment and the sender's rights and reasonable expectations.</li>
+          <li><strong>Handling legally required GDPR rights requests:</strong> compliance with a legal obligation under Article 6(1)(c), to the extent necessary to fulfil the applicable duties in Articles 12–22.</li>
+          <li><strong>Limited correspondence follow-up records:</strong> legitimate interests under Article 6(1)(f), limited to documenting the response and addressing potential complaints about handling the request. Only the minimal completion record described in section 7 is retained, subject to the documented necessity and balancing assessment.</li>
+        </ul>
+        <p>The publisher does not use privacy correspondence for advertising or marketing or submit it to an AI model. Software permission switches are not a substitute for the legal assessment. Independent service providers' processing is governed by their applicable terms and notices, rather than by these correspondence-specific grounds.</p>
+      </section>
+      <section id="retention">
+        <h2>7. Retention, access and deletion</h2>
+        <p>Local settings, logs, exports, inspection caches, policies and gateway accounting/security records remain until the owner removes them or manages them using other tools. The current log-retention preference does not automatically delete old files. There is no automatic destructive cleanup job.</p>
+        <p>You can access settings and evidence through the application's folder-opening controls or Windows File Explorer. To remove unneeded desktop data, stop relevant owned services, close the app, and review/delete its settings, logs, exports and inspection cache in your selected locations. Back up anything you wish to retain. Files in the shared Local AppData folders or custom evidence folders can remain after uninstalling the Store package.</p>
+        <p>Review gateway data separately before deletion: its ledger and consumed-request/replay records protect accounting and prevent repeat authorization. Do not reset these records to repeat an already-consumed request. Removing shared gateway data can disable the setup or its security protections. Deleting local files does not delete provider-held data, copies you shared or your API account; use the relevant service's controls for those copies.</p>
+        <h3>Privacy-mailbox retention</h3>
+        <p>The publisher applies the following operational retention limits. They are not statutory retention periods. A case is closed when a final substantive response has been sent and no specific action remains pending:</p>
+        <ul>
+          <li><strong>Open enquiries:</strong> keep only the information needed while resolving them. After closure, remove correspondence from owner-controlled mailbox folders and copies within six months.</li>
+          <li><strong>Rights-request completion record:</strong> retain only a minimal record of request type, relevant contact, dates, verification outcome and response outcome for up to twelve months after closure. Do not keep a duplicate full message archive under this rule.</li>
+          <li><strong>Attachments and identity evidence:</strong> remove unnecessary attachments promptly, and no later than thirty days after closure. Do not request identity documents routinely; if exceptionally necessary, delete copies once verification is complete unless a documented legal requirement justifies retention.</li>
+          <li><strong>Review and exceptions:</strong> review the mailbox monthly and delete earlier when information is no longer needed. Retain a necessary subset longer only for a documented unresolved complaint, dispute or applicable legal requirement, with restricted access and monthly review until the reason ends.</li>
+        </ul>
+        <p>Monthly review and deletion are handled manually; the application does not automate mailbox cleanup. Microsoft recovery, backup and service-security retention can differ from removal of the publisher's mailbox copies; immediate erasure from every provider system is not promised. These correspondence rules are separate from owner-local gateway accounting records.</p>
+      </section>
+      <section id="security">
+        <h2>8. Security and its limits</h2>
+        <p>The reviewed gateway uses HTTPS with certificate-chain and hostname verification, signed Android requests, enrolled public identities, timestamps, replay protection and finite request/budget controls. The desktop credential dialog and scoped child-process pipe reduce accidental credential disclosure. Windows account access controls and your gateway/certificate configuration remain important.</p>
+        <p>Default diagnostic exports apply redaction to recognized credentials and some identifiers. Redaction is not guaranteed anonymization: original evidence, unrecognized formats and third-party tool output may still contain sensitive information. Review exports before sharing. No software or network can guarantee absolute security.</p>
+      </section>
+      <section id="sharing">
+        <h2>9. Sharing and independent services</h2>
+        <p>The desktop application does not automatically upload local diagnostics to the developer and contains no advertising or data-sale feature. Information leaves the local environment when you use configured network services, authorize an OpenAI request, or choose to share/export files yourself.</p>
+        <p>OpenAI processes authorized AI requests. Microsoft handles Store distribution and Windows services, and Tailscale handles its separately configured networking service. Those services and other installed tools have their own policies and account controls. Their data practices are not replaced by this policy.</p>
+      </section>
+      <section id="website">
+        <h2>10. This privacy-policy website</h2>
+        <p>When you visit this static page on GitHub Pages, GitHub logs and stores visitors' IP addresses for security purposes. The page itself sets no cookies and contains no analytics scripts, tracking pixels, web forms or external fonts. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. Visiting a linked service makes that service's own privacy practices relevant.</p>
+      </section>
+      <section id="contact">
+        <h2>11. Publisher and privacy contact</h2>
+        <p><strong>Publisher:</strong> Vishal Nelaturi.<br><strong>Status:</strong> Individual developer based in France.<br><strong>Privacy contact:</strong> ROSE Privacy — <a href="mailto:rosecontrolcenter.privacy@outlook.com">rosecontrolcenter.privacy@outlook.com</a>.<br><strong>Developer profile:</strong> <a href="https://github.com/vishal-221810402051">github.com/vishal-221810402051</a>.</p>
+        <p>Use the dedicated privacy mailbox for privacy questions and data-rights requests. Include a short description and, where relevant, the application version. Do not send API keys, private signing keys, full diagnostic archives or unrelated personal information. The GitHub profile is an attribution link, not a private messaging channel; do not post sensitive requests publicly.</p>
+        <p>If you contact ROSE Privacy, the publisher receives your email address, any name you provide, your message and attachments, and associated email metadata to address your enquiry or rights request. The mailbox uses Microsoft Outlook; delivery and storage involve Microsoft's email service under the <a href="https://www.microsoft.com/en-us/privacy/privacystatement">Microsoft Privacy Statement</a>. This correspondence is separate from the application's local logs and is not erased by uninstalling ROSE Control Center.</p>
+        <p>Microsoft describes international processing and transfer safeguards in that statement. An Outlook address does not establish that messages stay in a particular country, and this policy makes no account-specific claim of EU-only storage or a particular contractual transfer mechanism.</p>
+        <p>This contact does not give the publisher remote access to your local files or gateway. You can manage local files using the controls described in section 7.</p>
+      </section>
+      <section id="rights">
+        <h2>12. Your privacy rights</h2>
+        <p>Where the GDPR applies, and subject to its conditions, you may request access, correction, erasure, restriction or portability of your personal data, or object to processing. Where processing relies on consent, you may withdraw it without affecting earlier lawful processing. You may complain to the <a href="https://www.cnil.fr/fr/adresser-une-plainte">CNIL in France</a> or another competent data-protection authority. See the <a href="https://commission.europa.eu/law/law-topic/data-protection/information-individuals_en">European Commission's explanation of these rights</a>.</p>
+        <p>Send privacy questions and rights requests to ROSE Privacy at the address in section 11. Requests concern the party responsible for the relevant processing. The publisher cannot remotely retrieve or erase files that remain solely on your computer; use the local controls in section 7 for those files. Provider account controls may help manage provider-held records but do not replace a controller's applicable duties. Security/accounting records do not have a blanket exemption from privacy rights.</p>
+        <p>Where GDPR applies, requests must be handled without undue delay and normally within one month; any legally permitted extension must be explained within that period. Proportionate identity verification may be needed. You do not need to send an API key or identity document with an initial request.</p>
+        <p>The reviewed desktop software checks operational status and applies configured routing and authorization rules. It contains no advertising-profiling feature or feature that automatically decides a person's legal rights or eligibility for services.</p>
+      </section>
+      <section id="changes">
+        <h2>13. Policy updates</h2>
+        <p>Changes to this policy will be posted on this page with an updated date. Material changes to application data handling should be reflected here before those changes are released. This policy does not claim Microsoft Store certification or legal-compliance certification.</p>
+      </section>
+    </article>
+  </div>
+  <footer>ROSE Control Center · Privacy policy · Windows desktop application</footer>
+</div>
+</body>
+</html>
